@@ -18,7 +18,7 @@ export class FormComponent implements OnInit {
     year: null,
     description: null,
     duration: null,
-    genre: null //hola
+    genre: null // Hola a todos
   };
   id: any;
   editing: boolean;
