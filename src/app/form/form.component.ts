@@ -20,7 +20,7 @@ export class FormComponent implements OnInit {
     duration: null,
     genre: null
   };
-  id: any;
+  id: any;//Cual
   editing: boolean;
   movies: Movie[];
   constructor(private moviesService: MoviesService, private activatedRoute: ActivatedRoute, private httpClient: HttpClient) {
