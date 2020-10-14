@@ -13,12 +13,12 @@ import { viewClassName } from '@angular/compiler';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  movie: Movie = { //sena
+  movie: Movie = {
     name: null,
     year: null,
     description: null,
     duration: null,
-    genre: null // Hola a todos que pereza
+    genre: null
   };
   id: any;
   editing: boolean;
