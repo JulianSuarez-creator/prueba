@@ -13,7 +13,7 @@ import { viewClassName } from '@angular/compiler';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  movie: Movie = {
+  movie: Movie = { //sena
     name: null,
     year: null,
     description: null,
