@@ -18,11 +18,11 @@ export class FormComponent implements OnInit {
     year: null,
     description: null,
     duration: null,
-    genre: null // Hola a todos que pereza
+    genre: null
   };
-  id: any;
-  editing: boolean;
-  movies: Movie[];
+  id: any;//mas
+  editing: boolean = false;
+   movies: Movie[];
   constructor(private moviesService: MoviesService, private activatedRoute: ActivatedRoute, private httpClient: HttpClient) {
     this.id = this.activatedRoute.snapshot.params['id'];
     if (this.id) {
@@ -47,7 +47,7 @@ export class FormComponent implements OnInit {
 
     if (this.editing){
       this.moviesService.put(this.movie).subscribe((data) => {
-        alert('Pelicula actualizada');
+        alert('Producto actualizada');
         console.log(data);
       }, (error) => {
         console.log(error);
@@ -55,7 +55,7 @@ export class FormComponent implements OnInit {
       });
     }else{
       this.moviesService.save(this.movie).subscribe((data) => {
-        alert('Pelicula guardada');
+        alert('Producto guardada');
         console.log(data);
       }, (error) => {
         console.log(error);
