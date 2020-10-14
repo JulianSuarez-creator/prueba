@@ -3,23 +3,23 @@
   <div>
     <div class="form-group">
       <label for="name">Nombre</label>
-      <input [(ngModel)]="movie.name" type="text" class="form-control" id="name" placeholder="Ingresar Nombre">
+      <input [(ngModel)]="movie.name" type="text" class="form-control" id="name" placeholder="Ingresar Nombre" required>
     </div>
     <div class="form-group">
       <label for="description">Descripción</label>
-      <textarea [(ngModel)]="movie.description" class="form-control" id="description" placeholder="Ingresar Descripcion"></textarea>
+      <textarea [(ngModel)]="movie.description" class="form-control" id="description" placeholder="Ingresar Descripcion" required></textarea>
     </div>
     <div class="form-group">
       <label for="genre">Tipo</label>
-      <input [(ngModel)]="movie.genre" type="text" class="form-control" id="genre" placeholder="Ingresar Tipo">
+      <input [(ngModel)]="movie.genre" type="text" class="form-control" id="genre" placeholder="Ingresar Tipo" required>
     </div>
     <div class="form-group">
       <label for="duration">Garantia</label>
-      <input [(ngModel)]="movie.duration" type="text" class="form-control" id="duration" placeholder="Ingresar Garantia">
+      <input [(ngModel)]="movie.duration" type="text" class="form-control" id="duration" placeholder="Ingresar Garantia" required>
     </div>
     <div class="form-group">
       <label for="year">Año de fabricación</label>
-      <input [(ngModel)]="movie.year" type="number" class="form-control" id="year" placeholder="Ingresar Año de fabricación">
+      <input [(ngModel)]="movie.year" type="number" class="form-control" id="year" placeholder="Ingresar Año de fabricación" required>
     </div>
     <button (click)="saveMovie()" class="btn btn-primary btn-block">Guardar</button>
   </div>
